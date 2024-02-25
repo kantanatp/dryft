@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("registrationForm").addEventListener("submit", function(event) {
         event.preventDefault(); // Prevent default form submission
         if(paymentInfoSaved) {
-            window.location.href = 'main.html'; // Redirect to main.html if payment info is saved
+            window.location.href = 'main'; // Redirect to main.html if payment info is saved
         }
     });
 
