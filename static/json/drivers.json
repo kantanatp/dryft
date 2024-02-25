@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "firstName": "John",
+        "lastName": "Doe",
+        "carType": "Toyota Corolla",
+        "finalLocation": "Champaign Walmart",
+        "maxBid": 25
+    },
+    {
+        "id": 2,
+        "firstName": "Emma",
+        "lastName": "Williams",
+        "carType": "Tesla Model 3",
+        "finalLocation": "Champaign Walmart",
+        "maxBid": 22
+    },
+    {
+        "id": 3,
+        "firstName": "Olivia",
+        "lastName": "Smith",
+        "carType": "Ford Explorer",
+        "finalLocation": "Champaign Walmart",
+        "maxBid": 18
+    },
+    {
+        "id": 4,
+        "firstName": "Noah",
+        "lastName": "Brown",
+        "carType": "Dodge Durango",
+        "finalLocation": "Champaign Walmart",
+        "maxBid": 27
+    },
+    {
+        "id": 5,
+        "firstName": "Liam",
+        "lastName": "Taylor",
+        "carType": "BMW 3 Series",
+        "finalLocation": "Champaign Walmart",
+        "maxBid": 20
+    }
+]

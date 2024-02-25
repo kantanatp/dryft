@@ -1,0 +1,131 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* White background */
+}
+
+header {
+    background-color: #000; /* Black background */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.driver-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.driver {
+    background-color: white;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between; /* Adjust content spacing */
+    align-items: center;
+    width: 90%; /* Adjust width as needed */
+    border: 1px solid #ddd; /* Border around the driver entry */
+}
+
+.driver-photo {
+    width: 80px; /* Adjust size as needed */
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #000; /* Black border around the image */
+    margin-right: 20px;
+}
+
+.driver-details {
+    display: flex;
+    align-items: center;
+}
+
+.driver-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.driver-name {
+    font-size: 1.2em;
+    margin: 0;
+    color: #000; /* Black color for text */
+}
+
+.car-type {
+    font-size: 1em;
+    color: #555;
+}
+
+.driver-bid {
+    font-size: 1.2em;
+    color: #000; /* Black color for text */
+    margin-right: 20px; /* Spacing before the button */
+}
+
+.select-driver {
+    padding: 10px 20px;
+    background-color: #FFA500; /* Light orange color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.select-driver:hover {
+    background-color: #cc8400; /* Darker orange on hover */
+}
+
+@media (max-width: 768px) {
+    .driver {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .driver-bid, .select-driver {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .select-driver {
+        padding: 10px;
+    }
+}
+
+.title {
+    position: absolute;
+    color: white;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.finish-bidding {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Example color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.finish-bidding:hover {
+    background-color: #45a049; /* Darker shade for hover */
+}
