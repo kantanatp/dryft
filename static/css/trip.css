@@ -29,3 +29,22 @@ body, html {
     font-size: 24px;
     font-weight: bold;
 }
+
+#endTrip {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    position: fixed; /* Keep it at the bottom regardless of scrolling */
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+}
+
+#endTrip:hover {
+    background-color: darkred;
+}

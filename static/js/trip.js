@@ -81,3 +81,20 @@ function calculateAndDisplayRoute(startLoc, endLoc) {
         }
     });
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const endTripButton = document.createElement('button');
+    endTripButton.textContent = 'End Trip';
+    endTripButton.id = 'endTrip';
+    document.body.appendChild(endTripButton); // Append the button to the body
+
+    endTripButton.addEventListener('click', function() {
+        // Stop watching the current location when the trip ends
+        if (watchID != null) {
+            navigator.geolocation.clearWatch(watchID);
+        }
+        
+        // Redirect to the rating page
+        window.location.href = '/rating';
+    });
+});

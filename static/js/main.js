@@ -132,7 +132,7 @@ function displayDistanceAndPrice(distance) {
     bookingButton.className = 'button';
     bookingButton.textContent = 'Booking';
     bookingButton.onclick = function() {
-        window.location.href = 'booking.html'; // Redirect to booking.html
+        window.location.href = 'booking'; // Redirect to booking.html
     };
     
     // Append buttons to container

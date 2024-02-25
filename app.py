@@ -81,6 +81,21 @@ def handle_upload():
 def main():
     return render_template('main.html')
 
+@app.route('/booking', methods=['GET', 'POST'])
+def booking():
+    return render_template('booking.html')
+
+@app.route('/trip', methods=['GET', 'POST'])
+def trip():
+    return render_template('trip.html')
+
+@app.route('/rating', methods=['GET', 'POST'])
+def rating():
+    return render_template('rating.html')
+
+@app.route('/profile', methods=['GET', 'POST'])
+def profile():
+    return render_template('profile.html')
 
 # runapp
 if __name__ == '__main__':

@@ -2,22 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Driver Profile</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/profile.css">
+    <title>Emma Williams' Profile</title>
+    <link rel="stylesheet" href="static/css/profile.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 </head>
 <body>
+    <button id="backToMainButton" onclick="window.location.href='/main';">Back to Main</button>
     <div class="title">dryft</div>
     <div class="profile-container">
+        <div class="profile-picture">
+            <img src="static/images/defaultimage.jpeg" alt="Emma Williams">
+        </div>
         <div class="profile-info">
-            <img src="{{ driver.photo }}" alt="Driver Photo">
-            <div class="details">
-                <h1>Driver Profile</h1>
-                <h2>{{ driver.name }}</h2>
-                <p>Contact Number: {{ driver.contact_number }}</p>
-                <p>Car Type: {{ driver.car_type }}</p>
-            </div>
+            <h1 id="fullName">Emma Williams <button id="editButton"><i class="fas fa-pencil-alt"></i></button></h1>
+            <p id="rating">Rating: 4.93 ★</p>
+            <p id="carModel">Car Model: Tesla Model 3</p>
+            <!-- Additional info can be added here -->
         </div>
     </div>
+    <script src="../static/js/driver-auth.js"></script>
 </body>
 </html>

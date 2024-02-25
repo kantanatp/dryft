@@ -1,48 +1,78 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .profile-container {
-    height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: #f4f4f4;
+    background: #fff;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
 }
 
 .profile-info {
-    display: flex;
-    align-items: center;
-}
-
-.profile-info img {
-    width: 200px;
-    height: 200px;
-    border: 2px solid #000;
-    border-radius: 50%;
-    margin-right: 40px;
-    flex-shrink: 0;
-}
-
-.details {
-    flex-grow: 1;
-}
-
-h1 {
     text-align: center;
-    margin-bottom: 20px;
-    margin-top: 0;
 }
 
-h2 {
-    margin-top: 0;
+.profile-info h1 {
+    margin: 0 0 10px 0;
 }
 
-p {
-    margin: 10px 0;
+.profile-info p {
+    margin: 4px 0;
+}
+
+#rating {
+    color: #FFD700; /* Gold color for the star */
+    font-size: 20px;
+}
+
+#editButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    vertical-align: middle;
+    color: #007bff; /* Blue color */
+}
+
+#editButton:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+body {
+    position: relative; /* Needed for absolute positioning within the body */
+}
+
+#backToMainButton {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    padding: 10px 20px; /* Adjust as needed */
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor changes to pointer to indicate clickable */
+}
+
+#backToMainButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
 .title {
