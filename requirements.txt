@@ -6,9 +6,15 @@ flask-pymongo==2.3.0
 PyJWT==2.8.0  # JWT tokens for authentication
 python-dotenv==0.21.0  # Manage env variables
 requests==2.31.0  # HTTP requests to external APIs
-Flask-Login==0.7.0  # Handle user sessions
+Flask-Login==0.6.3  # Handle user sessions
 torch==2.2.0
 torchvision==0.17.0
 stripe==3.0.0 
 googlemaps==4.10.0  # For Google Maps API integration
 Flask-HTTPAuth==4.8.0
+flask_bcrypt==1.0.1
+pytesseract==0.3.10
+ultralytics==8.1.18
+roboflow
+inference
+numpy
