@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.registration-container {
+    padding: 20px; /* Adjusted padding to ensure content fits within the container */
+    background: #fff;
+    max-width: 600px; /* Adjust if necessary to fit your content */
+    margin: auto; /* Center the container */
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group input[type="date"] {
+    width: calc(100% - 20px); /* Adjust width to account for padding/margins */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.inline-fields {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.inline-fields > div {
+    flex: 1; /* Each child flexes equally */
+    margin-right: 10px; /* Adds some space to the right of each input */
+}
+
+.inline-fields > div:last-child {
+    margin-right: 0; /* Removes the margin for the last element to fit better */
+}
+
+.inline-fields > div.middle-name {
+    flex: 0.25; /* Adjust the flex value for a better fit */
+}
+
+.form-group select {
+    flex: 1;
+}
+
+/* Style adjustments for Save and Register buttons */
+button#savePaymentMethod,
+button#submitBtn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button#savePaymentMethod {
+    background-color: #007bff;
+    color: white;
+}
+
+button#submitBtn {
+    background-color: #ccc;
+    color: #666;
+}
+
+button#submitBtn:not(:disabled) {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Required field indicator */
+.required {
+    color: red;
+}
+
+/* Spacing for the Save and Register buttons */
+button {
+    margin-top: 10px;
+}
+
+/* Styling for the saved payment method message */
+#paymentMethodSaved p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.checkmark {
+    color: green;
+}
+
+.trashcan {
+    cursor: pointer;
+    color: red;
+}
+
+/* Disabling the submit button style */
+#submitBtn:disabled {
+    cursor: not-allowed;
+}
+
+
+.title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
