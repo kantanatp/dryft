@@ -107,16 +107,18 @@ function calculateAndDisplayRoute(directionsService, directionsRenderer, destina
         if (status === 'OK') {
             directionsRenderer.setDirections(response);
             const distance = response.routes[0].legs[0].distance.text;
-            displayDistanceAndPrice(distance, "$22"); // Assuming $22 is the price to display
+            displayDistanceAndPrice(distance);
+            localStorage.setItem('startLocation', JSON.stringify(currentLocation));
+            localStorage.setItem('endLocation', JSON.stringify(destination));
         } else {
             window.alert('Directions request failed due to ' + status);
         }
     });
 }
 
-function displayDistanceAndPrice(distance, price) {
+function displayDistanceAndPrice(distance) {
     let infoDiv = document.getElementById('distance-price-info');
-    infoDiv.innerHTML = `<div>Distance: ${distance}</div><div>Price: ${price}</div>`;
+    infoDiv.innerHTML = `<div>Distance: ${distance}</div>`;
     // Create buttons
     let buttonContainer = document.createElement('div');
     buttonContainer.className = 'button-container';
