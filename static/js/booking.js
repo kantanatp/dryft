@@ -64,6 +64,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add event listener for the "Finish Bidding" button
     const finishBiddingButton = document.getElementById('finish-bidding');
     finishBiddingButton.addEventListener('click', function() {
-        window.location.href = 'trip.html'; // Redirect to the trip page
+        window.location.href = 'trip'; // Redirect to the trip page
     });
 });

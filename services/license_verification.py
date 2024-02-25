@@ -6,13 +6,11 @@ import numpy as np
 import pytesseract
 
 class LicenseVerificationService:
-    def __init__(self, api_key, project_id, version, output_dir='../data/cropped_faces'):
+    def __init__(self, api_key, project_id, version):
         self.api_key = api_key
         self.project_id = project_id
         self.version = version
-        self.output_dir = output_dir
         self.model = self.load_model()
-        os.makedirs(self.output_dir, exist_ok=True)
 
     def load_model(self):
         model = get_model(model_id=f"{self.project_id}/{self.version}", api_key=self.api_key)

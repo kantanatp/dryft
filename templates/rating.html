@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate Your Trip!</title>
+    <link rel="stylesheet" href="../static/css/rating.css">
+</head>
+<body>
+    <div class="rating-container">
+        <h2>Rate Your Trip!</h2>
+        <div class="stars" data-rating="0">
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+        </div>
+        <textarea id="comment" placeholder="Write a comment..."></textarea>
+        <button id="submitRating">Submit Rating</button>
+        <!-- Message container -->
+        <div id="submissionMessage"></div>
+        <button id="returnMain">Return to Main</button>
+    </div>
+    <script src="../static/js/rating.js"></script>
+</body>
+</html>
