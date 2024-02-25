@@ -17,27 +17,27 @@ h1 {
 }
 
 #distance-price-info {
-    display: none; /* Initially hidden */
+    display: flex;
+    justify-content: space-between; /* Aligns child elements to the edges */
+    align-items: center;
     position: fixed;
-    /* bottom: -100%; */
     left: 0;
-    width:97%;
+    width: 100%;
     bottom: 0;
     height: 15%;
     background-color: #ffffff;
     box-shadow: 0 -2px 6px rgba(0,0,0,0.3);
-    border-top-left-radius: 20px; /* Curved edges */
-    border-top-right-radius: 20px; /* Curved edges */
-    border-bottom-left-radius: 20px; /* Curved edges */
-    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     text-align: center;
     padding: 20px;
     font-size: 2.2em;
 }
+
 .button {
     display: inline-block;
     padding: 10px 20px;
-    margin: 10px;
+    margin: 20px;
     font-size: 1em;
     border-radius: 5px;
     text-decoration: none;
@@ -54,6 +54,7 @@ h1 {
 
 .button-container {
     display: flex;
+    padding-right: 20px;
     justify-content: center;
 }
 .title {
@@ -63,4 +64,42 @@ h1 {
     margin: 20px;
     font-size: 24px;
     font-weight: bold;
+}
+
+.profile-header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.profile-pic-link {
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px; /* Add space between profile picture and button */
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%; /* Circular image */
+    border: 2px solid black; /* Black border */
+}
+
+.driver-mode-button {
+    padding: 5px 15px; /* Larger padding for better visual */
+    background-color: #4285F4; /* Blue background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8em;
+    transition: background-color 0.3s;
+}
+
+.driver-mode-button:hover {
+    background-color: #3066BE; /* Darker blue on hover */
 }
